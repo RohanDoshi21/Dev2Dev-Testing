@@ -24,4 +24,4 @@ jobs:
           cache: maven
 
       - name: Build and test with Maven
-        run: mvn surefire:test
+        run: mvn install
