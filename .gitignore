@@ -156,6 +156,7 @@ fabric.properties
 # Sensitive or high-churn files:
 
 # Gradle:
+.gradle
 
 # Mongo Explorer plugin:
 
