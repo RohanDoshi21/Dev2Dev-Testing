@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "questions": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "ownerId": {
+                  "type": "integer"
+                },
+                "upvotes": {
+                  "type": "integer"
+                },
+                "downvotes": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "tag": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "owner": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "email"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "description",
+                "ownerId",
+                "upvotes",
+                "downvotes",
+                "created_at",
+                "status",
+                "tag"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "questions"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

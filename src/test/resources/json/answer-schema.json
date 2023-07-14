@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "answers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "ownerId": {
+                  "type": "integer"
+                },
+                "question_id": {
+                  "type": "integer"
+                },
+                "upvotes": {
+                  "type": "integer"
+                },
+                "downvotes": {
+                  "type": "integer"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "email"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "description",
+                "ownerId",
+                "question_id",
+                "upvotes",
+                "downvotes",
+                "created_at",
+                "owner"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "answers"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}
