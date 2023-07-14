@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-public class AnswerTest extends BaseTest{
+public class AnswerTest extends BaseTest {
 
     @Test(description = "Answer Test")
     public void getAnswer() {

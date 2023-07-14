@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-public class QuestionTest extends BaseTest{
+public class QuestionTest extends BaseTest {
     @Test(description = "Question test")
     public void questionTest() {
         String endpoint = "/questions";
