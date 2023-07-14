@@ -1,6 +1,10 @@
 name: Run Test Cases
 
 on:
+  push:
+    branches:
+      - main
+      
   schedule:
     - cron: "0 0 * * 1,4"  # Runs at midnight UTC every Monday and Thursday
 
